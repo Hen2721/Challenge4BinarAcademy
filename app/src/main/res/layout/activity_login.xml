@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:background="@color/cyan"
+        tools:context=".activity.login.LoginActivity">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108dp"
+            android:text="Login"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.544"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/gambar_buku"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/baseline_book_24"
+            app:layout_constraintEnd_toEndOf="@+id/login"
+            app:layout_constraintHorizontal_bias="0.601"
+            app:layout_constraintStart_toStartOf="@+id/login"
+            app:layout_constraintTop_toBottomOf="@+id/login" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameemail"
+            android:layout_width="375dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/gambar_buku"
+            app:layout_constraintHorizontal_bias="0.541"
+            app:layout_constraintStart_toStartOf="@+id/gambar_buku"
+            app:layout_constraintTop_toBottomOf="@+id/gambar_buku">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EmailL"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Masukkan email"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="@+id/nameemail"
+            app:layout_constraintStart_toStartOf="@+id/nameemail"
+            app:layout_constraintTop_toBottomOf="@+id/nameemail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Password"
+                android:layout_width="372dp"
+                android:layout_height="60dp"
+                android:hint="Masukkan Password"
+                android:inputType="textPassword"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="412dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonLogin"
+            android:layout_width="356dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="56dp"
+            android:text="@string/login"
+            app:layout_constraintEnd_toEndOf="@+id/nameemail"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/nameemail"
+            app:layout_constraintTop_toBottomOf="@+id/password" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/membuat_registrasi"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

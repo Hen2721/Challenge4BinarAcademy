@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="book"
+            type="com.example.challenge4.core.domain.model.Book" />
+
+        <import type="com.example.challenge4.adapter.BookAdapter" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        app:cardCornerRadius="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_item_photo"
+                android:layout_width="70dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toEndOf="@id/img_item_photo"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_edit_name"
+                app:layout_constraintStart_toEndOf="@+id/img_item_photo"
+                app:layout_constraintTop_toTopOf="@+id/img_item_photo"
+                app:text="@{book.bookName}"
+                tools:text="Buku Cerita" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_item_description"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/img_item_photo"
+                app:layout_constraintEnd_toEndOf="@+id/btn_delete_name"
+                app:layout_constraintStart_toStartOf="@+id/tv_item_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_item_name"
+                app:text="@{book.bookTahunTerbit}"
+                tools:text="Lorem Ipsum" />
+
+            <ImageButton
+                android:id="@+id/btn_edit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                android:src="@drawable/baseline_edit_note_24"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_delete_name"
+                app:layout_constraintEnd_toStartOf="@+id/btn_delete_name"
+                app:layout_constraintTop_toTopOf="@+id/btn_delete_name" />
+
+            <ImageButton
+                android:id="@+id/btn_delete_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:src="@drawable/baseline_delete_24"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/img_item_photo" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">challenge4</string>
+    <string name="title_readbook">Read Book</string>
+    <string name="subtitle_readbook">Where you can find your favorite Book</string>
+    <string name="email">Masukkan email</string>
+    <string name="hint_password">Masukkan password</string>
+    <string name="login">Login</string>
+    <string name="membuat_registrasi">Belum punya akun? Registration</string>
+    <string name="masukkan_no_hp">Enter Your Telephone Number</string>
+    <string name="masukkan_email">enter your name</string>
+    <string name="isi_email">Email</string>
+    <string name="isi_no_hp">Phone Number</string>
+    <string name="masukkan_password">Enter Password </string>
+    <string name="ulangi_password">re-enter password</string>
+    <string name="isi_password">Password</string>
+    <string name="isi_konfirmasi">Confirm</string>
+    <string name="masukkan_nama">enter your name </string>
+    <string name="isi_username">Username</string>
+    <string name="profile_title">Profile</string>
+    <string name="masukkan_username">enter your username</string>
+    <string name="forgot_password_hint">Forget Password?</string>
+    <string name="login_title_value">Login</string>
+    <string name="isi_login_dahulu">Already have an account? Login Here</string>
+    <string name="buat_akun">Create New Account</string>
+    <string name="abc_btn_value">Register</string>
+    <string name="registrasi_nama">Name</string>
+    <string name="book_title">Isikan Data Buku</string>
+    <string name="nama_buku">Nama Buku</string>
+    <string name="masukkan_name_buku">Masukkan Nama Buku</string>
+    <string name="jenis_buku">Jenis Buku</string>
+    <string name="masukkan_jenis_buku">Masukkan Jenis Buku</string>
+    <string name="penerbit">Penerbit</string>
+    <string name="masukkan_penerbit">Masukkan Penerbit</string>
+    <string name="penulis">Penulis</string>
+    <string name="masukkan_penulis">Masukkan Penulis</string>
+    <string name="tahun_terbit">Tahun Terbit</string>
+    <string name="masukkan_tahun_terbit">Masukkan Tahun Terbit</string>
+    <string name="jumlah_halaman">Jumlah Halaman</string>
+    <string name="masukkan_jumlah_halaman">Masukkan Jumlah Halaman</string>
+    <string name="simpan_data_buku">Simpan</string>
+    <string name="rubah_data_buku">Rubah Data Buku</string>
+
+</resources>
