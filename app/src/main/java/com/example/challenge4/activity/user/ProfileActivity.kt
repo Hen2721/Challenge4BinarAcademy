@@ -9,17 +9,17 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.challenge4.R
 import com.example.challenge4.core.di.UserViewModelFactory
 import com.example.challenge4.core.domain.model.User
-import com.example.challenge4.databinding.ActivityProfileBinding
+import com.example.challenge4.databinding.ActivityRegisprofilBinding
 
 class ProfileActivity : AppCompatActivity() {
 
     private lateinit var profileViewModel: ProfileViewModel
-    private lateinit var binding: ActivityProfileBinding
+    private lateinit var binding: ActivityRegisprofilBinding
     private var userId = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_profile)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_regisprofil)
         isEnabledInput(false)
 
         val emailPreferences = getSharedPreferences("userAccount", MODE_PRIVATE)

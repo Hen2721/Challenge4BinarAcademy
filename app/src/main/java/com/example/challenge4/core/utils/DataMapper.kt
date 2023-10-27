@@ -12,11 +12,11 @@ object DataMapper {
             Book(
                 bookId = it.bookId,
                 bookName = it.bookName,
-                bookJenis = it.bookClub,
-                bookPenerbit = it.bookPosition,
-                bookPenulis = it.bookNationality,
-                bookTahunTerbit = it.bookDescription,
-                bookImage = it.bookImage
+                bookJenis = it.bookJenis,
+                bookPenerbit = it.bookPenerbit,
+                bookPenulis = it.bookPenulis,
+                bookTahunTerbit = it.bookTahunTerbit,
+                bookJumlahHalaman = it.bookJumlahHalaman,
             )
         }
 
@@ -24,21 +24,21 @@ object DataMapper {
         Book(
             bookId = input.bookId,
             bookName = input.bookName,
-            bookJenis = input.bookClub,
-            bookPenerbit = input.bookPosition,
-            bookPenulis = input.bookNationality,
-            bookTahunTerbit = input.bookDescription,
-            bookImage = input.bookImage
+            bookJenis = input.bookJenis,
+            bookPenerbit = input.bookPenerbit,
+            bookPenulis = input.bookPenulis,
+            bookTahunTerbit = input.bookTahunTerbit,
+            bookJumlahHalaman = input.bookJumlahHalaman
         )
 
     fun bookDomainToEntity(input: Book) = BookEntity(
         bookId = input.bookId,
         bookName = input.bookName,
-        bookClub = input.bookJenis,
-        bookPosition = input.bookPenerbit,
-        bookNationality = input.bookPenulis,
-        bookDescription = input.bookTahunTerbit,
-        bookImage = input.bookImage
+        bookJenis = input.bookJenis,
+        bookPenerbit = input.bookPenerbit,
+        bookPenulis = input.bookPenulis,
+        bookTahunTerbit = input.bookTahunTerbit,
+        bookJumlahHalaman = input.bookJumlahHalaman
     )
 
     fun userDomainToUserEntity(input: User) = UserEntity(

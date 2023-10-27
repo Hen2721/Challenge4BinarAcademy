@@ -212,7 +212,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 app:endIconMode="custom"
-                app:endIconTint="@color/black"
+                app:endIconTint="@color/white"
                 app:endIconTintMode="multiply"
                 app:hintEnabled="false"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -242,13 +242,13 @@
                 app:layout_constraintTop_toBottomOf="@id/player_image_input" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/save_player"
+                android:id="@+id/btn_save"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
-                android:backgroundTint="@color/black"
+                android:backgroundTint="@color/white"
                 android:gravity="center_horizontal|center_vertical"
                 android:text="@string/simpan_data_buku"
                 app:iconGravity="textStart"

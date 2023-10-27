@@ -14,19 +14,19 @@ data class BookEntity(
     @ColumnInfo(name = "book_name")
     val bookName: String,
 
-    @ColumnInfo(name = "book_club")
-    val bookClub: String,
+    @ColumnInfo(name = "book_jenis")
+    val bookJenis: String,
 
-    @ColumnInfo(name = "book_position")
-    val bookPosition: String,
+    @ColumnInfo(name = "book_penerbit")
+    val bookPenerbit: String,
 
-    @ColumnInfo(name = "book_nationaly")
-    val bookNationality: String,
+    @ColumnInfo(name = "book_penulis")
+    val bookPenulis: String,
 
-    @ColumnInfo(name = "book_description")
-    val bookDescription: String,
+    @ColumnInfo(name = "book_tahunterbit")
+    val bookTahunTerbit: String,
 
-    @ColumnInfo(name = "book_image")
-    val bookImage: File,
+    @ColumnInfo(name = "book_jumlahhalaman")
+    val bookJumlahHalaman: String,
 
     )

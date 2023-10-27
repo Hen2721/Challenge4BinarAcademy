@@ -31,19 +31,19 @@
         android:supportsRtl="true"
         tools:targetApi="31">
         <activity
-            android:name=".activity.user.ActivityProfile"
+            android:name=".activity.user.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.rubahbook.RubahActivity"
+            android:name=".activity.edit.EditActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.tambahbook.BookActivity"
+            android:name=".activity.addbook.AddActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.register.ActivityRegister"
+            android:name=".activity.register.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.login.ActivityLogin"
+            android:name=".activity.login.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,7 +52,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.detailbook.Activity_Detail"
+            android:name=".activity.detail.DetailActivity"
             android:exported="false" />
         <activity
             android:name=".activity.home.MainActivity"

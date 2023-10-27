@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.google.android.material.imageview.ShapeableImageView
 import com.example.challenge4.core.domain.model.Book
-import com.example.challenge4.databinding.ItemBookBinding
+import com.example.challenge4.databinding.BookItemBinding
 import java.io.File
 
 class BookAdapter(private val bookList: List<Book>) :
@@ -26,7 +26,7 @@ class BookAdapter(private val bookList: List<Book>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ItemBookBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        val binding = BookItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
@@ -36,15 +36,15 @@ class BookAdapter(private val bookList: List<Book>) :
         holder.itemView.setOnClickListener {
             onItemClickCallback.onItemClicked(book)
         }
-        holder.binding.btnEditBook.setOnClickListener {
+        holder.binding.btnEditName.setOnClickListener {
             onItemClickCallback.onEditClicked(book)
         }
-        holder.binding.btnDeleteBook.setOnClickListener {
+        holder.binding.btnDeleteName.setOnClickListener {
             onItemClickCallback.onDeleteClicked(book)
         }
     }
 
-    class ViewHolder(val binding: ItemBookBinding) :
+    class ViewHolder(val binding: BookItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(book: Book) {
